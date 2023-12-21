@@ -203,7 +203,7 @@ public class ManageCustomersFormController {
 
     private String generateNewId() {
         try {
-            return CustomerDAO.genarateNewId();
+            return CustomerDAO.generateNewId();
 
         } catch (SQLException e) {
             new Alert(Alert.AlertType.ERROR, "Failed to generate a new id " + e.getMessage()).show();
